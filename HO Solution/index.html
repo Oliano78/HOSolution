@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HO Tech Solutions - Services IT professionnels à Madagascar. Infrastructure, support, sécurité et conseil informatique pour entreprises.">
+    <meta name="keywords" content="IT, informatique, Madagascar, Toamasina, support technique, infrastructure réseau, cybersécurité">
+    <title>HO Tech Solutions - Services IT Professionnels Madagascar</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <i data-lucide="server" class="w-8 h-8 text-blue-600"></i>
+                    <span class="ml-2 text-xl font-bold text-gray-900">HO Tech Solutions</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#accueil" class="text-gray-700 hover:text-blue-600 transition">Accueil</a>
+                    <a href="#services" class="text-gray-700 hover:text-blue-600 transition">Services</a>
+                    <a href="#apropos" class="text-gray-700 hover:text-blue-600 transition">À propos</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+                </div>
+
+                <button id="menu-btn" class="md:hidden">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="md:hidden bg-white border-t hidden">
+            <div class="px-4 py-3 space-y-3">
+                <a href="#accueil" class="block text-gray-700 hover:text-blue-600">Accueil</a>
+                <a href="#services" class="block text-gray-700 hover:text-blue-600">Services</a>
+                <a href="#apropos" class="block text-gray-700 hover:text-blue-600">À propos</a>
+                <a href="#contact" class="block text-gray-700 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="pt-24 pb-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    Solutions IT Professionnelles pour Votre Entreprise
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-blue-100">
+                    Infrastructure • Support • Sécurité • Conseil
+                </p>
+                <p class="text-lg mb-8 max-w-3xl mx-auto">
+                    Expert en administration systèmes et réseaux avec 3+ ans d'expérience. 
+                    Support de 1200+ utilisateurs, déploiements massifs, et optimisation d'infrastructures IT.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contact" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition inline-block">
+                        Demander un devis
+                    </a>
+                    <a href="#services" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition inline-block">
+                        Nos services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold text-blue-600 mb-2">1200+</div>
+                    <div class="text-gray-600">Utilisateurs supportés</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold text-blue-600 mb-2">98%</div>
+                    <div class="text-gray-600">Taux de satisfaction</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold text-blue-600 mb-2">30%</div>
+                    <div class="text-gray-600">Réduction MTTR</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold text-blue-600 mb-2">3+</div>
+                    <div class="text-gray-600">Années d'expérience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nos Services</h2>
+                <p class="text-xl text-gray-600">Solutions complètes pour votre infrastructure IT</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <i data-lucide="server" class="w-12 h-12 text-blue-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Infrastructure IT</h3>
+                    <p class="text-gray-600 mb-4">Déploiement et configuration d'infrastructures réseau complètes. Active Directory, serveurs Windows, virtualisation Proxmox.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-700">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>
+                            <span>Déploiement 200+ postes</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>
+                            <span>Migration Windows 11</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>
+                            <span>Configuration VLAN</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <i data-lucide="shield" class="w-12 h-12 text-blue-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Sécurité & Conformité</h3>
+                    <p class="text-gray-600 mb-4">Protection de vos systèmes avec des solutions éprouvées. BitLocker, firewall Fortinet, patch management.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-700">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>
+                            <span>Audit de sécurité</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>
+                            <span>98% conformité patches</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>
+                            <span>Politiques GPO</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <i data-lucide="network" class="w-12 h-12 text-blue-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Support IT Externalisé</h3>
+                    <p class="text-gray-600 mb-4">Support technique N1/N2 pour vos équipes. Gestion de tickets, résolution rapide, disponibilité garantie.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-700">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>
+                            <span>Support 1200+ users</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>
+                            <span>98% résolution SLA</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>
+                            <span>Helpdesk réactif</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <i data-lucide="hard-drive" class="w-12 h-12 text-blue-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Infogérance PME</h3>
+                    <p class="text-gray-600 mb-4">Gestion complète de votre parc informatique. Maintenance préventive, inventaire CMDB, optimisation des coûts.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-700">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>
+                            <span>Gestion 100+ équipements</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>
+                            <span>Maintenance proactive</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>
+                            <span>Reporting mensuel</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">À propos</h2>
+                    <p class="text-lg text-gray-700 mb-4">
+                        <strong>MANDIMBIJAO Hery Oliano</strong>, Technicien Support IT et Logistique avec plus de 3 ans d'expérience chez Concentrix, spécialisé en administration Windows Server, infrastructures réseau et automatisation.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Expérience prouvée dans le support de 1200+ utilisateurs, le déploiement massif de postes (200+ via WDS), et la gestion complète d'Active Directory avec plus de 1000 objets.
+                    </p>
+                    
+                    <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">Certifications</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i data-lucide="chevron-right" class="w-5 h-5 text-blue-600 mr-2 mt-0.5"></i>
+                            <span>Administration Windows Server (OpenClassrooms, 2023)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="chevron-right" class="w-5 h-5 text-blue-600 mr-2 mt-0.5"></i>
+                            <span>Virtualisation avec Proxmox VE (OpenClassrooms, 2025)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="chevron-right" class="w-5 h-5 text-blue-600 mr-2 mt-0.5"></i>
+                            <span>Réseau TCP/IP (OpenClassrooms, 2022)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="chevron-right" class="w-5 h-5 text-blue-600 mr-2 mt-0.5"></i>
+                            <span>Initiation Linux (OpenClassrooms, 2023)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Expertise Technique</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Systèmes & Administration</h4>
+                            <p class="text-sm text-gray-700">Windows Server, Active Directory, GPO, PowerShell, WDS/WDT</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Réseau & Sécurité</h4>
+                            <p class="text-sm text-gray-700">TCP/IP, DHCP, DNS, VLAN, Firewall Fortinet, BitLocker, Patch Management</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Outils & Plateformes</h4>
+                            <p class="text-sm text-gray-700">Helix BMC, FreshService, PDQ Deploy, Proxmox VE</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Logistique IT</h4>
+                            <p class="text-sm text-gray-700">Gestion inventaire (100+ équipements), CMDB, coordination prestataires</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contactez-nous</h2>
+                <p class="text-xl text-gray-600">Discutons de vos besoins IT</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Informations de contact</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i data-lucide="phone" class="w-6 h-6 text-blue-600 mr-4 mt-1"></i>
+                            <div>
+                                <p class="font-semibold text-gray-900">Téléphone</p>
+                                <a href="tel:+261348395376" class="text-blue-600 hover:underline">+261 34 83 953 76</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <i data-lucide="mail" class="w-6 h-6 text-blue-600 mr-4 mt-1"></i>
+                            <div>
+                                <p class="font-semibold text-gray-900">Email</p>
+                                <a href="mailto:mandimbijao.78@gmail.com" class="text-blue-600 hover:underline">mandimbijao.78@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <i data-lucide="map-pin" class="w-6 h-6 text-blue-600 mr-4 mt-1"></i>
+                            <div>
+                                <p class="font-semibold text-gray-900">Localisation</p>
+                                <p class="text-gray-700">Tanambao V, Toamasina<br>Madagascar</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 p-6 bg-blue-50 rounded-lg">
+                        <h4 class="font-bold text-gray-900 mb-3">Pourquoi nous choisir ?</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2 mt-0.5"></i>
+                                <span>Expertise prouvée avec 1200+ utilisateurs supportés</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2 mt-0.5"></i>
+                                <span>98% de taux de satisfaction client</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2 mt-0.5"></i>
+                                <span>Réduction de 30% du temps de résolution</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2 mt-0.5"></i>
+                                <span>Certifications reconnues et à jour</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Formulaire de contact</h3>
+                    <p class="text-gray-600 mb-6">
+                        Remplissez ce formulaire et nous vous contacterons sous 24h pour discuter de vos besoins IT.
+                    </p>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Nom complet</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Votre nom">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="votre.email@exemple.com">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Téléphone</label>
+                            <input type="tel" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="+261 XX XX XXX XX">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Entreprise</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Nom de votre entreprise">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Décrivez vos besoins IT..."></textarea>
+                        </div>
+                        <button onclick="alert('Merci pour votre message ! Nous vous contacterons sous 24h via WhatsApp ou email.');" class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                            Envoyer le message
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i data-lucide="server" class="w-8 h-8 text-blue-400"></i>
+                    <span class="ml-2 text-xl font-bold">HO Tech Solutions</span>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400">© 2026 HO Tech Solutions. Tous droits réservés.</p>
+                    <p class="text-gray-400 text-sm mt-1">Toamasina, Madagascar</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
